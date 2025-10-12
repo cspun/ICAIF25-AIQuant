@@ -118,8 +118,8 @@
       .schedule .time{ opacity:.85; }
     }
 
-    /* Speakers grid (4 total) */
-    .speakers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    /* Speakers grid (5 total) */
+    .speakers{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
     @media (max-width: 1100px){ .speakers{grid-template-columns:repeat(2,1fr)} }
     @media (max-width: 620px){ .speakers{grid-template-columns:1fr} }
     .speaker-card{
@@ -276,11 +276,10 @@
       <span class="tag selected">Selected</span>
       <span>
         Lightning Talks (<a href="#poster-session" style="color:#9bffd5;text-decoration:underline">Accepted Papers</a>) — 
-        <strong>TBC</strong>
 	<!-- <strong>A. A. Alzahrani (PIF)</strong>, --> 
-        <!-- <strong>K. Jain (UCL)</strong>,  -->
-        <!-- <strong>L. Vinh Tran (JPMC)</strong>,  -->
-        <!-- <strong>O. Pricilia (Oxford)</strong> -->
+        <strong>K. Jain (UCL)</strong>,
+        <strong>A. Chinta (JPMorganChase)</strong>,
+        <strong>O. Pricilia (Oxford)</strong>
       </span>
     </div>
 
@@ -316,7 +315,7 @@
       <span>
         <a href="javascript:void(0)" title="View abstract" onclick="openModal('modal5')">
           “TBC”
-        </a> — <strong>TBC</strong>
+        </a> — <strong>Andrew Lim (NUS)</strong>
       </span>
     </div>
 
@@ -365,7 +364,7 @@
 <div id="modal5" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal5')">&times;</span>
-    <h3>“TBC” — Speaker TBC</h3>
+    <h3>“TBC” — Andrew Lim</h3>
     <p>Abstract: To be confirmed.</p>
   </div>
 </div>
@@ -395,7 +394,7 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
 </script>
     	
 
-  <!-- ===== Speakers (4 total) ===== -->
+  <!-- ===== Speakers (5 total) ===== -->
   <main class="container">
     <section class="card" style="margin-top:6px">
       <div class="kicker">Keynote/Plenary Speakers</div>
@@ -412,7 +411,7 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
             <div class="speaker-links">
               <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Alain_Bensoussan">Wikipedia</a>
               <a target="_blank" rel="noopener" href="https://profiles.utdallas.edu/alain.bensoussan">Profile</a>
-	      <a target="_blank" rel="noopener" href="https://personal.utdallas.edu/~axb046100/">Website</a>
+	      <a target="_blank" rel="noopener" href="https://personal.utdallas.edu/~axb046100/">Web</a>
             </div>
           </div>
         </div>
@@ -421,7 +420,7 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
 		<img class="speaker-photo" src="https://cspun.github.io/ICAIF25-AIQuant/GeorgeYin.jpeg" alt="George Yin" style="object-position:50% 20%">
 	<div class="speaker-body">
 		<span class="role-badge">Keynote Speaker</span>
-		<div class="speaker-name">George Yin</div>
+		<div class="speaker-name">George Gang Yin</div>
 		<p class="speaker-title">Professor of Mathematics</p>
 		<p class="speaker-affil">University of Connecticut</p>
 	<div class="speaker-links">
@@ -431,12 +430,23 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
 	</div>
 
         <div class="speaker-card">
+          <img class="speaker-photo" src="https://cspun.github.io/ICAIF25-AIQuant/AndrewLim.jpeg" alt="Andrew Lim" style="object-position:50% 20%">
+          <div class="speaker-body">
+            <span class="role-badge">Plenary Speaker</span>
+            <div class="speaker-name">Andrew Ee Beng Lim</div>
+            <p class="speaker-title">Professor of Analytics and Operations</p>
+            <p class="speaker-affil">National University of Singapore</p>
+            <div class="speaker-links"><a target="_blank" rel="noopener" href="https://www.andreaslimoncello.net/">Website</a></div>
+          </div>
+        </div>
+
+        <div class="speaker-card">
           <img class="speaker-photo" src="https://cspun.github.io/ICAIF25-AIQuant/HoiYingWong.jpg" alt="Hoi Ying Wong" style="object-position:50% 50%">
           <div class="speaker-body">
             <span class="role-badge">Plenary Speaker</span>
             <div class="speaker-name">Hoi Ying Wong</div>
             <p class="speaker-title">Professor of Statistics and Data Science</p>
-            <p class="speaker-affil">Chinese University of Hong Kong</p>
+            <p class="speaker-affil">The Chinese University of Hong Kong</p>
             <div class="speaker-links"><a target="_blank" rel="noopener" href="https://www.sta.cuhk.edu.hk/hywong/">Website</a></div>
           </div>
         </div>
@@ -473,9 +483,9 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
         The following papers are accepted for poster presentation in this workshop:
 	</p>
         <div class="core-qs">
-<li><strong>A. A. Alzahrani (PIF)</strong>: <em>Deep Signature and Neural RDE Methods for Path-Dependent Portfolio Optimization</em>
+<!-- <li><strong>A. A. Alzahrani (PIF)</strong>: <em>Deep Signature and Neural RDE Methods for Path-Dependent Portfolio Optimization</em>
   <span class="tag lt" aria-label="Lightning Talk">Lightning Talk</span>
-</li>
+</li>  -->
 <li><strong>K. Jain (UCL)</strong>, N. Firoozye, J. Kochems, and P. Treleaven: <em>An Impulse Control Approach to Market Making in a Hawkes LOB Market</em>
   <span class="tag lt" aria-label="Lightning Talk">Lightning Talk</span>
 </li>
@@ -492,11 +502,11 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
 <li><strong>J. Zhang (PKU)</strong>: <em>Tail-Safe Stochastic-Control SPX–VIX Hedging: A White-Box Two-Way Bridge Between AI Targets and Arbitrage-Free Market</em></li>
 <li><strong>S. Molavipour (SEB Group)</strong>, A. M. Javid, C. Ye, B. Löfdahl, and M. Nechaev: <em>Robust Yield Curve Estimation for Mortgage Bonds Using Neural Networks</em></li>
 <li><strong>G. Verbii (MSU)</strong>, M. Sokolovskii, G. Kilinkarov, D. Goryunov, and V. Yafarov: <em>Self-Organizing Maps for Spatiotemporal Analysis of SSVI Vol. Surface Regimes</em></li>
-<li><strong>A. G. Srinivasan (IIT Madras)</strong>, A. J. Said, S. Pentela, V. Dwivedi, and B. Srinivasan: <em>Towards Fast Option Pricing PDE Solvers Powered by PIELM</em></li>
-<li><strong>R. Slepaczuk (UWarsaw)</strong> and F. Stefaniuk: <em>A Neural Network Informer In Algorithmic Investment Strategies on High Frequency Bitcoin Data</em></li>
-<li><strong>P. Sakowski (UWarsaw)</strong> and J. Maskiewicz: <em>Can AI Trade Fin. Mkts? Auton. Fin. Trading with DRL: Comparative Study of DDQN, PPO, & Network Archt.</em></li>
+<!-- <li><strong>A. G. Srinivasan (IIT Madras)</strong>, A. J. Said, S. Pentela, V. Dwivedi, and B. Srinivasan: <em>Towards Fast Option Pricing PDE Solvers Powered by PIELM</em></li> -->
+<!-- <li><strong>R. Slepaczuk (UWarsaw)</strong> and F. Stefaniuk: <em>A Neural Network Informer In Algorithmic Investment Strategies on High Frequency Bitcoin Data</em></li> -->
+<!-- <li><strong>P. Sakowski (UWarsaw)</strong> and J. Maskiewicz: <em>Can AI Trade Fin. Mkts? Auton. Fin. Trading with DRL: Comparative Study of DDQN, PPO, & Network Archt.</em></li> -->
 <!-- <li><strong>G. Verbii (MSU)</strong>, G. Kilinkarov, M. Sokolovskii, D. Goryunov, and V. Yafarov: <em>Opt. Stopping via Martingale Rainbow Deep Q-Learning: Risk-Sensitive Fin. Decision-Making</em></li> -->
-<li><strong>K. Sharma (Archrock)</strong>: <em>Enhancing Model Checking in MDPs Using Deep Q-Learning: A Comparative Analysis of State and Action Encoding Strategies</em></li>
+<!-- <li><strong>K. Sharma (Archrock)</strong>: <em>Enhancing Model Checking in MDPs Using Deep Q-Learning: A Comparative Analysis of State and Action Encoding Strategies</em></li> -->
         </div>
 </div>
       </section>
@@ -513,7 +523,7 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
         <!-- Organizer 1 -->
         <div class="speaker-card">
           <div class="photo-frame">
-            <img src="https://cspun.github.io/ICAIF25-AIQuant/PatrickPun.jpg" alt="Patrick Chi Seng Pun" style="object-position:20% 10%">
+            <img src="https://cspun.github.io/ICAIF25-AIQuant/PatrickPun.jpg" alt="Patrick Chi Seng Pun" style="object-position:50% 15%">
           </div>
           <div class="speaker-body">
             <span class="role-badge">Organizer</span>
@@ -535,7 +545,7 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
             <span class="role-badge">Organizer</span>
             <div class="speaker-name">Phillip Sheung Chi Yam</div>
             <p class="speaker-title">Professor of Statistics and Data Science</p>
-            <p class="speaker-affil">Chinese University of Hong Kong</p>
+            <p class="speaker-affil">The Chinese University of Hong Kong</p>
             <div class="speaker-links">
               <a target="_blank" rel="noopener" href="https://www.sta.cuhk.edu.hk/scpy/">Website</a>
             </div>
