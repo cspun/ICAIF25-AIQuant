@@ -266,7 +266,7 @@
       <span class="tag plenary">Plenary</span>
       <span>
         <a href="javascript:void(0)" title="View abstract" onclick="openModal('modal2')">
-          “TBC”
+          “An Efficient On-Policy Deep Learning Framework for Stochastic Optimal Control”
         </a> — <strong>Mathieu Laurière (NYU Shanghai)</strong>
       </span>
     </div>
@@ -277,7 +277,7 @@
       <span>
         Lightning Talks (<a href="#poster-session" style="color:#9bffd5;text-decoration:underline">Accepted Papers</a>) — 
 	<strong>A. A. Alzahrani (PIF)</strong>, 
-        <strong>K. Jain (UCL)</strong>,
+        <!-- <strong>K. Jain (UCL)</strong>, -->
         <strong>A. Chinta (JPMC)</strong>,
         <strong>O. Pricilia (Oxford)</strong>
       </span>
@@ -304,7 +304,7 @@
       <span class="tag plenary">Plenary</span>
       <span>
         <a href="javascript:void(0)" title="View abstract" onclick="openModal('modal4')">
-          “TBC”
+          “DeepMartingale: Duality of the Optimal Stopping Problem with Expressivity”
         </a> — <strong>Hoi Ying Wong (CUHK)</strong>
       </span>
     </div>
@@ -340,8 +340,9 @@
 <div id="modal2" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <h3>“TBC” — Mathieu Laurière</h3>
-    <p>Abstract: To be confirmed.</p>
+    <h3>“An Efficient On-Policy Deep Learning Framework for Stochastic Optimal Control” — Mathieu Laurière</h3>
+    <p>We present a novel on-policy algorithm for solving stochastic optimal control (SOC) problems. By leveraging the Girsanov theorem, our method directly computes on-policy gradients of the SOC objective without expensive backpropagation through stochastic differential equations or adjoint problem solutions. This approach significantly accelerates the optimization of neural network control policies while scaling efficiently to high-dimensional problems and long time horizons. We evaluate our method on classical SOC benchmarks as well as applications to sampling from unnormalized distributions via Schrödinger-Föllmer processes and fine-tuning pre-trained diffusion models. Experimental results demonstrate substantial improvements in both computational speed and memory efficiency compared to existing approaches. Joint work with Mengjian Hua and Eric Vanden-Eijnden.</p>
+    <p>Link to the paper: <a href="https://openreview.net/forum?id=sv5PiLZbUr" title="Click here">here</a></p>
   </div>
 </div>
 
@@ -349,16 +350,16 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal3')">&times;</span>
     <h3>“Deep Filtering” — George Yin</h3>
-    <p>Nonlinear filtering is a fundamental problem in signal processing, information theory, communication,  control and optimization, and systems theory.  In the 1960s, celebrated results on nonlinear filtering such as the Kushner equation and the Duncan-Motensen-Zakai equation were obtained. Nevertheless, the computational issues for nonlinear filtering remained to be a long-standing and challenging problem. In this talk, in lieu of treating the stochastic partial differential equations for obtaining the conditional distribution or conditional measure, we construct finite-dimensional approximations using deep neural networks for the optimal weights. Two recursions are used in the algorithm. One of them is the approximation of the optimal weight and the other is for approximating the optimal learning rate. Convergence and rates of convergence will be discussed together with some examples. A reference related to the talk can be found in this <a href="https://www.siam.org/publications/siam-news/articles/a-new-computational-method-for-nonlinear-filtering/" title="Click here">SIAM News article</a> </p>
-    <p>[This is a joint work with  Hongjiang Qian (Auburn University) and Qing Zhang (University of Georgia).]</p>
+    <p>Nonlinear filtering is a fundamental problem in signal processing, information theory, communication,  control and optimization, and systems theory.  In the 1960s, celebrated results on nonlinear filtering such as the Kushner equation and the Duncan-Motensen-Zakai equation were obtained. Nevertheless, the computational issues for nonlinear filtering remained to be a long-standing and challenging problem. In this talk, in lieu of treating the stochastic partial differential equations for obtaining the conditional distribution or conditional measure, we construct finite-dimensional approximations using deep neural networks for the optimal weights. Two recursions are used in the algorithm. One of them is the approximation of the optimal weight and the other is for approximating the optimal learning rate. Convergence and rates of convergence will be discussed together with some examples. [This is a joint work with  Hongjiang Qian (Auburn University) and Qing Zhang (University of Georgia).]</p>
+    <p>A reference related to the talk can be found in this <a href="https://www.siam.org/publications/siam-news/articles/a-new-computational-method-for-nonlinear-filtering/" title="Click here">SIAM News article</a></p>
   </div>
 </div>
 
 <div id="modal4" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <h3>“TBC” — Hoi Ying Wong</h3>
-    <p>Abstract: To be confirmed.</p>
+    <h3>“DeepMartingale: Duality of the Optimal Stopping Problem with Expressivity” — Hoi Ying Wong</h3>
+    <p>Using a martingale representation, we introduce a novel deep-learning approach, which we call DeepMartingale, to study the duality of discrete-monitoring optimal stopping problems in continuous time. This approach provides a tight upper bound for the primal value function, even in high-dimensional settings. We prove that the upper bound derived from DeepMartingale converges under very mild assumptions. Even more importantly, we establish the expressivity of DeepMartingale: it approximates the true value function within any prescribed accuracy under our architectural design of neural networks whose size is related to the dimension of factors only in polynomial order. This guarantees that DeepMartingale does not suffer from the curse of dimensionality. Numerical experiments demonstrate the practical effectiveness of DeepMartingale, confirming its convergence, expressivity, and stability.</p>
   </div>
 </div>
 
@@ -421,7 +422,7 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
 	<div class="speaker-body">
 		<span class="role-badge">Keynote Speaker</span>
 		<div class="speaker-name">George Gang Yin</div>
-		<p class="speaker-title">Professor of Mathematics; IEEE Fellow, IFAC Fellow, SIAM Fellow</p>
+		<p class="speaker-title">Professor of Mathematics; IEEE Fellow, IFAC Fellow, SIAM Fellow, AMS Fellow</p>
 		<p class="speaker-affil">University of Connecticut</p>
 	<div class="speaker-links">
 		<a target="_blank" rel="noopener" href="https://gang-george-yin.github.io/">Website</a>
@@ -486,9 +487,9 @@ function closeModal(id){ document.getElementById(id).style.display = "none"; }
 <li><strong>A. A. Alzahrani (PIF)</strong>: <em>Deep Signature and Neural RDE Methods for Path-Dependent Portfolio Optimization</em>
   <span class="tag lt" aria-label="Lightning Talk">Lightning Talk</span>
 </li>
-<li><strong>K. Jain (UCL)</strong>, N. Firoozye, J. Kochems, and P. Treleaven: <em>An Impulse Control Approach to Market Making in a Hawkes LOB Market</em>
+<!-- <li><strong>K. Jain (UCL)</strong>, N. Firoozye, J. Kochems, and P. Treleaven: <em>An Impulse Control Approach to Market Making in a Hawkes LOB Market</em>
   <span class="tag lt" aria-label="Lightning Talk">Lightning Talk</span>
-</li>
+</li> -->
 <li><strong>A. Chinta (JPMC)</strong>, L. Vinh Tran, and J. Katukuri: <em>A Generalized Prob. Foundation Model with Deep Evidential Reg. for Portfolio Optimization</em>
   <span class="tag lt" aria-label="Lightning Talk">Lightning Talk</span>
 </li>
